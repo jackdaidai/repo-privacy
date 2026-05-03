@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caption Grab — Privacy Policy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+  h1 { color: #1a73e8; }
+  h2 { margin-top: 2em; color: #1a73e8; }
+  ul { padding-left: 1.5em; }
+  li { margin: 0.3em 0; }
+  code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>Caption Grab &mdash; Privacy Policy</h1>
+
+<p><strong>Last updated:</strong> May 3, 2026</p>
+
+<p>Caption Grab is a Chrome extension that captures and exports live captions from Google Meet and transcripts from Vimeo. This policy describes how the extension handles data.</p>
+
+<h2>Data Collection</h2>
+
+<p>Caption Grab does <strong>not</strong> collect, transmit, or store any user data on external servers. All processing happens entirely within the user's browser.</p>
+
+<p>Specifically, the extension:</p>
+
+<ul>
+  <li><strong>Reads</strong> caption text already rendered in the browser DOM on Google Meet and Vimeo pages</li>
+  <li><strong>Stores</strong> transcript text locally in <code>chrome.storage.local</code> so it persists across page refreshes</li>
+  <li><strong>Stores</strong> user preferences (export format, debounce timing, filename prefix) in <code>chrome.storage.sync</code></li>
+  <li><strong>Saves</strong> exported transcript files (.txt, .json, .md) to the user's local filesystem via <code>chrome.downloads</code></li>
+</ul>
+
+<h2>What We Do NOT Do</h2>
+
+<ul>
+  <li>No data is sent to any external server or API</li>
+  <li>No third-party transcription service is used</li>
+  <li>No bot or external account joins meetings</li>
+  <li>No audio is captured or recorded</li>
+  <li>No personal information is collected</li>
+  <li>No analytics or tracking is used</li>
+  <li>No cookies are used</li>
+</ul>
+
+<h2>Third-Party Services</h2>
+
+<p>The extension includes a bundled copy of the <a href="https://github.com/vimeo/player.js">Vimeo Player JS API</a> (MIT license) for interacting with the Vimeo player. This library runs entirely within the browser and does not communicate with any third-party service beyond the Vimeo page already loaded in the user's tab.</p>
+
+<h2>Data Retention</h2>
+
+<p>All data is stored locally on the user's device. The extension does not retain any data after the user clears it via the extension's "Clear" button or clears browser data through Chrome's settings.</p>
+
+<h2>Contact</h2>
+
+<p>For questions about this privacy policy, please contact the developer through the Chrome Web Store listing.</p>
+
+<h2>Changes</h2>
+
+<p>This policy may be updated from time to time. Any changes will be reflected in the "Last updated" date above.</p>
+
+</body>
+</html>
